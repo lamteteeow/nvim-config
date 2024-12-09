@@ -1,4 +1,5 @@
-# 💤 LazyVim
+# 💤 Neovim + Neovide GUI config with LazyVim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+Personal nvim config. Feel free to take what ever you need.
+
+**LICENSE**: `WTFPL`

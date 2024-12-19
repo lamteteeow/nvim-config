@@ -1,17 +1,17 @@
--- Load snacks.nvim/profiler first if requested
-if vim.env.PROF then
-    -- example for lazy.nvim
-    -- change this to the correct path for your plugin manager
-    local snacks = vim.fn.stdpath("data") .. "/lazy/snacks.nvim"
-    vim.opt.rtp:append(snacks)
-    require("snacks.profiler").startup({
-        startup = {
-            event = "VimEnter", -- stop profiler on this event. Defaults to `VimEnter`
-            -- event = "UIEnter",
-            -- event = "VeryLazy",
-        },
-    })
-end
+-- -- Load snacks.nvim/profiler first if requested
+-- if vim.env.PROF then
+--     -- example for lazy.nvim
+--     -- change this to the correct path for your plugin manager
+--     local snacks = vim.fn.stdpath("data") .. "/lazy/snacks.nvim"
+--     vim.opt.rtp:append(snacks)
+--     require("snacks.profiler").startup({
+--         startup = {
+--             event = "VimEnter", -- stop profiler on this event. Defaults to `VimEnter`
+--             -- event = "UIEnter",
+--             -- event = "VeryLazy",
+--         },
+--     })
+-- end
 
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
@@ -19,6 +19,7 @@ require("after.ftplugin.python")
 
 require("nvim-treesitter.install").compilers = { "clang", "gcc", "zig" }
 
+vim.g.snacks_animate = false
 vim.g.background = "dark" -- "light"/"dark" mode
 -- vim.g.gruvbox_material_background = "hard" -- "hard"/"soft"/"medium" contrast
 -- vim.g.gruvbox_material_better_performance = 1

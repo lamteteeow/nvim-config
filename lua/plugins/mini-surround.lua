@@ -7,7 +7,7 @@ return {
             custom_surroundings = nil,
 
             -- Duration (in ms) of highlight when calling `MiniSurround.highlight()`
-            highlight_duration = 500,
+            highlight_duration = 1000,
 
             -- Module mappings. Use `''` (empty string) to disable one.
             mappings = {
@@ -24,9 +24,9 @@ return {
             },
 
             -- Number of lines within which surrounding is searched
-            n_lines = 20,
+            n_lines = 30,
 
-            -- Whether to respect selection typea
+            -- Whether to respect selection type
             -- - Place surroundings on separate lines in linewise mode.
             -- - Place surroundings on each line in blockwise mode.
             respect_selection_type = false,

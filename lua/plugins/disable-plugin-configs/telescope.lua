@@ -284,7 +284,6 @@ return {
             t.load_extension("undo")
 
             -- Add mappings
-            -- vim.keymap.set("n", "<leader>fd", t.extensions.zoxide.list) --
             -- defined in which-key.lua plugin
         end,
     },

@@ -4,6 +4,7 @@ return {
     lazy = false,
     ---@type snacks.Config
     opts = {
+        -- animate = { enabled = false }, -- disabled globally at init.lua
         bigfile = { enabled = false }, -- manually handle bigfile, disable LSP from auto-attaching
         quickfile = { enabled = true },
         notifier = {
@@ -74,6 +75,12 @@ return {
             --     Snacks.toggle.profiler_highlights():map("<leader>ph")
             -- end,
         },
+        scope = {
+            enalbed = true,
+        },
+        indent = {
+            enabled = true,
+        },
     },
     keys = {
         -- {
@@ -90,13 +97,13 @@ return {
         --     end,
         --     desc = "Notifications History",
         -- },
-        {
-            "<leader>hn",
-            function()
-                Snacks.notifier.hide()
-            end,
-            desc = "Dismiss All Notifications",
-        },
+        -- {
+        --     "<leader>un",
+        --     function()
+        --         Snacks.notifier.hide()
+        --     end,
+        --     desc = "Dismiss All Notifications",
+        -- },
         -- {
         --     "<leader>bd",
         --     function()

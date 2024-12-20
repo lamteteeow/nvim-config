@@ -2,6 +2,7 @@ local wk = require("which-key")
 return {
     wk.add({
         { "<leader>;", ":lua Snacks.dashboard()<CR>", desc = "Dashboard" },
+        { "<leader><S-N>", ":Noice<CR>", desc = "Noice noti" },
         -- { "<leader>cs", ":Silicon<CR>", desc = "Snapshot Code", mode = "v" }, -- already defined in nvim-silicon
 
         -- Telescope

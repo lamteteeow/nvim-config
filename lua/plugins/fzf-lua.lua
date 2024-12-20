@@ -21,15 +21,15 @@ return {
                 backdrop = "40",
                 fullscreen = false,
             },
-            previewer = {
-                builtin = {
-                    extensions = {
-                        -- ["png"] = { "chafa", "{file}" },
-                        ["png"] = "chafa",
-                        ["jpg"] = { "chafa" },
-                    },
-                },
-            },
+            -- previewer = {
+            --     builtin = {
+            --         extensions = {
+            --             -- ["png"] = { "chafa", "{file}" },
+            --             ["png"] = "chafa",
+            --             ["jpg"] = { "chafa" },
+            --         },
+            --     },
+            -- },
         })
     end,
 }

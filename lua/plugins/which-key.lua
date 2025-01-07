@@ -1,5 +1,7 @@
 local wk = require("which-key")
 return {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
     wk.add({
         { "<leader>;", ":lua Snacks.dashboard()<CR>", desc = "Dashboard" },
         { "<leader><S-N>", ":Noice<CR>", desc = "Noice noti" },
@@ -35,4 +37,13 @@ return {
         -- rustaceanvim
         -- { "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", desc = "Debugger testables", mode = "n" },
     }),
+    opts = {
+        delay = function(ctx)
+            return ctx.plugin and 0 or 600
+        end,
+        icons = {
+            mappings = false,
+            rules = false,
+        },
+    },
 }

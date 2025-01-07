@@ -27,10 +27,11 @@ vim.g.background = "dark" -- "light"/"dark" mode
 -- vim.g.gruvbox_material_enable_bold = 1
 
 vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
 vim.g.loaded_node_provider = 0
-vim.g.python3_host_prog = "C:/Program Files/Programming languages/Python/cpython-3.13.0-windows-x86_64-none/python.exe"
-vim.g.python_host_skip_check = 1
-vim.g.python3_host_skip_check = 1
+vim.g.loaded_python3_provider = 0
+-- vim.g.python3_host_prog = "C:/Program Files/Programming languages/Python/cpython-3.13.0-windows-x86_64-none/python.exe"
+-- vim.g.python3_host_skip_check = 1
 
 -- Neovide only settings (transparency only works in terminal at the moment)
 if vim.g.neovide then
@@ -40,7 +41,7 @@ if vim.g.neovide then
     --     return string.format("%x", math.floor(255 * (vim.g.transparency or 0.8)))
     -- end
     -- vim.g.neovide_background_color = "#0f1117" .. alpha()
-    vim.g.neovide_transparency = 0.83
+    vim.g.neovide_transparency = 0.92
     -- vim.g.neovide_floating_opacity = 0.5 -- deprecated
     -- vim.g.neovide_floating_transparency = 0.5 -- deprecated
     vim.g.neovide_remember_window_size = true

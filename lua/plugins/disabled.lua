@@ -13,7 +13,7 @@ return {
     { "folke/tokyonight.nvim", enabled = false },
     { "catppuccin/nvim", enabled = false },
     { "windwp/nvim-ts-autotag", enabled = false },
-    { "rafamadriz/friendly-snippets", enabled = false },
+    -- { "rafamadriz/friendly-snippets", enabled = false },
     -- { "folke/flash", enabled = false },
     { "rcarriga/nvim-dap-ui", enabled = false },
     { "mfussenegger/nvim-dap", enabled = false },
@@ -22,5 +22,5 @@ return {
     { "nvim-telescope/telescope-fzf-native", enabled = false },
     { "echasnovski/mini.ai", enabled = false },
     { "mrcjkb/rustaceanvim", enabled = false },
-    -- { "ibhagwan/fzf-lua", enabled = false },
+    { "echasnovski/mini.icons", enabled = false },
 }

@@ -1,5 +1,7 @@
 return {
     "echasnovski/mini.surround",
+    event = "LazyFile",
+    lazy = true,
     opts = {
         {
             -- Add custom surroundings to be used on top of builtin ones. For more

@@ -13,9 +13,9 @@ return {
         config = function()
             local capabilities = require("blink.cmp").get_lsp_capabilities()
             local lspconfig = require("lspconfig")
-            --     lspconfig.ruff_lsp.setup({})
-            --     lspconfig.rust_analyzer.setup({})
-            --     lspconfig.zls.setup({})
+            -- lspconfig.ruff_lsp.setup({})
+            -- lspconfig.rust_analyzer.setup({})
+            -- lspconfig.zls.setup({})
             lspconfig.biome.setup({ capabilities = capabilities })
             -- lspconfig.glsl_analyzer.setup({})
             -- for Python type checking but however there is bug still

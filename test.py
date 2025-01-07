@@ -15,3 +15,6 @@ def maxProfit(prices):
 
 print(maxProfit( [7,6,4,3,1] ))
 print("what is the max profit")
+
+# def checkVersion():
+#     with file("version.txt") as f:

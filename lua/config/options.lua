@@ -96,7 +96,7 @@ vim.g.maplocalleader = " " -- change localleader to a space
 -- Luarocks
 -- opts.rocks.enabled = false -- wrong
 
--- vim.opt.clipboard = "unnamedplus"               -- allows neovim to access the system clipboard
+vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
 
 -- vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
 

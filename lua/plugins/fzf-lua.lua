@@ -25,8 +25,8 @@ return {
             --     builtin = {
             --         extensions = {
             --             -- ["png"] = { "chafa", "{file}" },
-            --             ["png"] = "chafa",
-            --             ["jpg"] = { "chafa" },
+            --             -- ["png"] = "chafa",
+            --             -- ["jpg"] = { "chafa" },
             --         },
             --     },
             -- },

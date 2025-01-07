@@ -1,28 +1,31 @@
 return {
     {
         "nvim-treesitter/nvim-treesitter",
-        -- build = "TSUpdate",
+        build = "TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup({
                 ensure_installed = {
-                    "lua",
-                    "vim",
-                    "vimdoc",
-                    "query",
-                    "bash",
-                    "regex",
-                    "rust",
-                    "c_sharp",
-                    "toml",
-                    "yaml",
-                    "python",
-                    "c",
-                    "cpp",
-                    "zig",
-                    "sql",
+                    -- "lua",
+                    -- "vim",
+                    -- "vimdoc",
+                    -- "query",
+                    -- "bash",
+                    -- "regex",
+                    -- "rust",
+                    -- "c_sharp",
+                    -- "toml",
+                    -- "yaml",
+                    -- "python",
+                    -- "c",
+                    -- "cpp",
+                    -- "zig",
+                    -- "sql",
                 },
+
                 -- Install parsers synchronously (only applied to `ensure_installed`)
                 sync_install = true,
+
+                modules = {},
 
                 -- Automatically install missing parsers when entering buffer
                 -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally

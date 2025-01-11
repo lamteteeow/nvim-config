@@ -10,12 +10,12 @@ vim.opt.smartcase = true -- smart case
 vim.opt.virtualedit = "block" -- Allow cursor to move anywhere in visual block mode (by default is "all")
 
 -- Environment
-vim.env.TMP = "C:/Users/Admin/AppData/Local/Temp"
+vim.env.TMP = "~/tmp"
 
 -- Integrated terminal settings
-vim.opt.shell = "bash.exe"
+vim.opt.shell = "bash"
 vim.opt.shellcmdflag = "-c"
-vim.g.terminal_emulator = "bash"
+vim.g.terminal_emulator = "Alacritty"
 vim.opt.termguicolors = true -- True color support
 vim.opt.autochdir = true
 vim.opt.cmdheight = 1 -- more space in the neovim command line for displaying messages

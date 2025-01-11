@@ -260,8 +260,8 @@ return {
   -- stylua: ignore
   -- These keymaps below only add new keymaps, not replacing
   keys = {
-    {"s", mode = { "n", "x", "o" }, false},
-    {"S", mode = { "n", "x", "o" }, false},
+    {"s", mode = { "n", "x", "o", "v"}, false},
+    {"S", mode = { "n", "x", "o", "v"}, false},
     -- { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
     -- { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
     -- { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },

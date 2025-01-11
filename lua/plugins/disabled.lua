@@ -23,4 +23,5 @@ return {
     { "echasnovski/mini.ai", enabled = false },
     { "mrcjkb/rustaceanvim", enabled = false },
     { "echasnovski/mini.icons", enabled = false },
+    { "michaelrommel/nvim-silicon", enabled = false },
 }

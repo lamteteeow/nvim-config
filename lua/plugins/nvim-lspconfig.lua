@@ -50,6 +50,12 @@ return {
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
             })
+            lspconfig.rust_analyzer.setup({
+                capabilities = capabilities,
+                settings = {
+                    ["rust-analyzer"] = {},
+                },
+            })
         end,
         -- -- Another way to define settings
         -- opts = {

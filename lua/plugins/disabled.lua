@@ -21,7 +21,7 @@ return {
     { "debugloop/telescope-undo", enabled = false },
     { "nvim-telescope/telescope-fzf-native", enabled = false },
     { "echasnovski/mini.ai", enabled = false },
-    { "mrcjkb/rustaceanvim", enabled = false },
+    -- { "mrcjkb/rustaceanvim", enabled = false },
     { "echasnovski/mini.icons", enabled = false },
     { "michaelrommel/nvim-silicon", enabled = false },
 }

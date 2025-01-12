@@ -17,8 +17,9 @@ return {
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config
     opts = {
-        enabled = function()
-            return true
+        enabled = function() -- you list filetypes where you dob't want blink blink to work here
+            local disabled_filetypes = { "neo-tree-popup" } -- you can add extra fileypes you do not want blink enabled.
+            return not vim.tbl_contains(disabled_filetypes, vim.bo.filetype) and vim.b.completion ~= false
         end,
         -- 'default' for mappings similar to built-in completion
         -- 'super-tab' for mappings similar to vscode (tab to accept, arrow keys to navigate)

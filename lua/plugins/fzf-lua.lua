@@ -17,14 +17,15 @@ return {
                 },
                 width = 0.8,
                 height = 0.75,
-                border = "none",
+                -- border = "none",
+                border = "rounded",
                 backdrop = "40",
                 fullscreen = false,
             },
             -- previewer = {
             --     builtin = {
             --         extensions = {
-            --             -- ["png"] = { "chafa", "{file}" },
+            --             -- ["png"] = { "viu", "chafa", "{file}" },
             --             -- ["png"] = "chafa",
             --             -- ["jpg"] = { "chafa" },
             --         },

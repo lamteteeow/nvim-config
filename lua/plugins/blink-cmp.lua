@@ -7,6 +7,7 @@ return {
     dependencies = {
         { "L3MON4D3/LuaSnip", version = "v2.*" },
         { "rafamadriz/friendly-snippets" },
+        { "supermaven-inc/supermaven-nvim" },
     },
 
     -- use a release tag to download pre-built binaries
@@ -139,7 +140,7 @@ return {
         -- default list of enabled providers defined so that you can extend it
         -- elsewhere in your config, without redefining it, via `opts_extend`
         sources = {
-            default = { "lsp", "path", "snippets", "buffer" },
+            default = { "lsp", "path", "snippets", "buffer", "markdown" },
             -- optionally disable cmdline completions
             -- cmdline = {},
             compat = { "supermaven" },
@@ -148,6 +149,11 @@ return {
                     kind = "Supermaven",
                     score_offset = 100,
                     async = true,
+                },
+                markdown = {
+                    name = "RenderMarkdown",
+                    module = "render-markdown.integ.blink",
+                    fallbacks = { "lsp" },
                 },
             },
         },

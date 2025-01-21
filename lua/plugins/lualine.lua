@@ -48,21 +48,20 @@ return {
             options = {
                 icons_enabled = true,
                 theme = "gruvbox-material",
-                -- theme = "jellybeans",
                 component_separators = { left = "", right = "" },
                 section_separators = { left = "", right = "" },
                 disabled_filetypes = {
                     statusline = {},
-                    winbar = {},
                 },
                 ignore_focus = {},
                 always_divide_middle = true,
-                always_show_tabline = true,
-                globalstatus = false,
+                always_show_tabline = false,
+                globalstatus = true,
                 refresh = {
+                    -- in ms
                     statusline = 100,
-                    tabline = 100,
-                    winbar = 100,
+                    -- tabline = 100,
+                    -- winbar = 100,
                 },
             },
             sections = {

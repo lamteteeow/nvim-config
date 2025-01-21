@@ -1,7 +1,7 @@
 {
   "extras": [
     "lazyvim.plugins.extras.ai.supermaven",
-    "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.util.dot"
   ],
   "news": {

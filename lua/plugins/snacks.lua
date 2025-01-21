@@ -6,6 +6,7 @@ return {
     opts = {
         -- animate = { enabled = false }, -- disabled globally at init.lua
         bigfile = { enabled = false }, -- manually handle bigfile, disable LSP from auto-attaching
+        pickers = { enabled = true },
         quickfile = { enabled = true },
         notifier = {
             enabled = true,

@@ -14,8 +14,9 @@ vim.env.TMP = "~/tmp"
 
 -- Integrated terminal settings
 vim.opt.shell = "bash"
+-- vim.opt.shell = "/usr/bin/bash"
 vim.opt.shellcmdflag = "-c"
-vim.g.terminal_emulator = "Alacritty"
+vim.g.terminal_emulator = "tmux"
 vim.opt.termguicolors = true -- True color support
 vim.opt.autochdir = true
 vim.opt.cmdheight = 1 -- more space in the neovim command line for displaying messages
@@ -96,7 +97,8 @@ vim.g.maplocalleader = " " -- change localleader to a space
 -- Luarocks
 -- opts.rocks.enabled = false -- wrong
 
-vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
+-- Clipboard
+vim.opt.clipboard = "unnamedplus" -- use system clipboard and not primary one
 
 -- vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
 

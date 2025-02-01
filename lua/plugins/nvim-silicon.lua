@@ -53,7 +53,7 @@ return {
             gobble = true,
             -- a string or function that defines the path to the output image
             output = function()
-                return "./" .. os.date("!%Y-%m-%dT%H-%M-%S") .. "_code.png"
+                return "./silicon_" .. os.date("!%Y-%m-%dT%H-%M-%S") .. ".png"
             end,
             -- whether to put the image onto the clipboard, may produce an error if run on WSL2
             to_clipboard = false,

@@ -7,7 +7,10 @@ local del = vim.keymap.del
 -- Add any additional keymaps here
 set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Def", noremap = true })
 set("n", "gr", vim.lsp.buf.references, { desc = "Go to Ref", noremap = true })
-set("n", "gh", vim.lsp.buf.hover, { desc = "Hover LSP", noremap = true })
+-- set("n", "gh", vim.lsp.buf.hover, { desc = "Hover LSP", noremap = true })
+set("n", "gh", "^", { desc = "First non-white space character of the line", noremap = true })
+set("n", "gl", "$", { desc = "Last character of the line", noremap = true })
+
 -- vim.api.nvim_set_keymap("n", "<leader>ft", "<cmd>Telescope live_grep<CR>", { noremap = true, desc = "Find Texts" }) -- Replaced by fzflua for LazyVim by default
 
 -- rustaceanvim

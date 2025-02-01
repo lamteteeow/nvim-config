@@ -17,7 +17,7 @@
 require("config.lazy")
 require("after.ftplugin.python")
 
-require("nvim-treesitter.install").compilers = { "clang", "gcc", "zig" }
+-- require("nvim-treesitter.install").compilers = { "clang", "gcc", "zig" }
 
 vim.g.snacks_animate = false
 vim.g.background = "dark" -- "light"/"dark" mode

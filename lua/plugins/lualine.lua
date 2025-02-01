@@ -57,11 +57,11 @@ return {
                 ignore_focus = {},
                 always_divide_middle = true,
                 always_show_tabline = true,
-                globalstatus = false,
+                globalstatus = true,
                 refresh = {
-                    statusline = 100,
-                    tabline = 100,
-                    winbar = 100,
+                    statusline = 120,
+                    -- tabline = 120,
+                    -- winbar = 120,
                 },
             },
             sections = {

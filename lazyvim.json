@@ -1,7 +1,8 @@
 {
   "extras": [
     "lazyvim.plugins.extras.ai.supermaven",
-    "lazyvim.plugins.extras.lang.toml"
+    "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.util.dot"
   ],
   "news": {
     "NEWS.md": "10960"

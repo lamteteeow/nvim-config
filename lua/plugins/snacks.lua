@@ -63,7 +63,7 @@ return {
                     -- },
                     -- { icon = "󰒲 ", key = "L", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
                     { icon = "󱐥", key = "u", desc = "Update plugins", action = "<cmd>Lazy update<CR>" },
-                    -- { icon = " ", key = "q", desc = "Quit", action = ":qa" },
+                    { icon = " ", key = "q", desc = "Quit", action = ":qa" },
                 },
             },
         },

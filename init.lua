@@ -19,6 +19,7 @@ require("after.ftplugin.python")
 
 -- require("nvim-treesitter.install").compilers = { "clang", "gcc", "zig" }
 
+vim.cmd("colorscheme gruvbox")
 vim.g.snacks_animate = false
 vim.g.background = "dark" -- "light"/"dark" mode
 -- vim.g.gruvbox_material_background = "hard" -- "hard"/"soft"/"medium" contrast
@@ -41,7 +42,7 @@ if vim.g.neovide then
     --     return string.format("%x", math.floor(255 * (vim.g.transparency or 0.8)))
     -- end
     -- vim.g.neovide_background_color = "#0f1117" .. alpha()
-    vim.g.neovide_transparency = 0.92
+    vim.g.neovide_opacity = 0.92
     -- vim.g.neovide_floating_opacity = 0.5 -- deprecated
     -- vim.g.neovide_floating_transparency = 0.5 -- deprecated
     vim.g.neovide_remember_window_size = true
@@ -73,12 +74,13 @@ if vim.g.neovide then
     -- Cursor
     vim.g.neovide_cursor_animate_in_insert_mode = false
     vim.g.neovide_cursor_animation_length = 0.02
-    vim.g.neovide_cursor_trail_size = 0.9
-    vim.g.neovide_cursor_vfx_mode = "wireframe"
-    vim.g.neovide_cursor_vfx_opacity = 250.0
-    vim.g.neovide_cursor_vfx_particle_lifetime = 0.6
-    vim.g.neovide_cursor_vfx_particle_density = 9.0
-    vim.g.neovide_cursor_vfx_particle_speed = 20.0
+    vim.g.neovide_cursor_trail_size = 0.7
+    vim.g.neovide_cursor_vfx_mode = ""
+    -- vim.g.neovide_cursor_vfx_mode = "wireframe"
+    -- vim.g.neovide_cursor_vfx_opacity = 250.0
+    -- vim.g.neovide_cursor_vfx_particle_lifetime = 0.6
+    -- vim.g.neovide_cursor_vfx_particle_density = 9.0
+    -- vim.g.neovide_cursor_vfx_particle_speed = 20.0
     -- vim.g.neovide_cursor_vfx_particle_phase = 1.5
     -- vim.g.neovide_cursor_vfx_particle_curl = 1.0
     vim.g.neovide_cursor_animate_command_line = false

@@ -1,8 +1,4 @@
-def maxProfit(prices):
-    """
-    :type prices: List[int]
-    :rtype: int
-    """
+def maxProfit(prices: list[int]) -> int:
     low = min(prices)
     low_id = prices.index(low)
     if low_id + 1== len(prices): 

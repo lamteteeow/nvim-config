@@ -1,5 +1,5 @@
 return {
-    "echasnovski/mini.surround",
+    "nvim-mini/mini.surround",
     event = "LazyFile",
     lazy = true,
     opts = {
@@ -14,11 +14,11 @@ return {
             -- Module mappings. Use `''` (empty string) to disable one.
             mappings = {
                 add = "sa", -- Add surrounding in Normal and Visual modes
-                delete = "sd", -- Delete surrounding
-                find = "sf", -- Find surrounding (to the right)
-                find_left = "sF", -- Find surrounding (to the left)
-                highlight = "sh", -- Highlight surrounding
-                replace = "sr", -- Replace surrounding
+                delete = "sd", -- Delete surrounding in Normal mode (+ key)
+                find = "sf", -- Find surrounding (to the right) in Normal mode (+ key)
+                find_left = "sF", -- Find surrounding (to the left) in Normal mode (+ key)
+                highlight = "sh", -- Highlight surrounding in Normal mode (+ key)
+                replace = "sr", -- Replace surrounding in Normal mode (+ key + replacing key)
                 update_n_lines = "sn", -- Update `n_lines`
 
                 suffix_last = "l", -- Suffix to search with "prev" method

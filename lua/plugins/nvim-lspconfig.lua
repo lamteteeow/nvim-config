@@ -18,10 +18,23 @@ return {
             -- lspconfig.zls.setup({})
             lspconfig.biome.setup({ capabilities = capabilities })
             -- lspconfig.glsl_analyzer.setup({})
-            -- for Python type checking but however there is bug still
-            -- therefore using pyright instead
-            -- lspconfig.pylyzer.setup({})
-            lspconfig.pyright.setup({
+            -- for Python type checking
+            -- lspconfig.pyright.setup({
+            --     capabilities = capabilities,
+            --     settings = {
+            --         pyright = {
+            --             -- Using Ruff's import organizer
+            --             disableOrganizeImports = true,
+            --         },
+            --         python = {
+            --             analysis = {
+            --                 -- Ignore all files for analysis to exclusively use Ruff for linting
+            --                 ignore = { "*" },
+            --             },
+            --         },
+            --     },
+            -- })
+            lspconfig.basedpyright.setup({
                 capabilities = capabilities,
                 settings = {
                     pyright = {

@@ -1,25 +1,37 @@
--- Open a split-screen terminal and run the current Python file in it
+-- open a split-screen terminal and run the current python file in it
 local function run_curr_python_file()
-    -- Get file name in the current buffer
+    -- get file name in the current buffer
     local file_name = vim.api.nvim_buf_get_name(0)
-
-    -- Get terminal codes for running python file
+    if file_name == "" then
+        vim.notify("No file to run!", vim.log.levels.WARN)
+        return
+    end
+    -- get terminal codes for running python file
     -- ("i" to enter insert before typing rest of the command)
-    local py_cmd = vim.api.nvim_replace_termcodes('ipython "' .. file_name .. '"<cr>', true, false, true)
+    -- local py_cmd = string.format('uv run python "%s"\r', file_name)
+    local py_cmd = vim.api.nvim_replace_termcodes('uv run python "' .. file_name .. '"<cr>', true, false, true)
+    -- local py_cmd = vim.api.nvim_replace_termcodes('ipython "' .. file_name .. '"<cr>', true, false, true)
 
-    -- Determine terminal window split and launch terminal
+    -- determine terminal window split and launch terminal
     local percent_of_win = 0.35
-    local curr_win_height = vim.api.nvim_win_get_height(0) -- Current window height
-    local term_height = math.floor(curr_win_height * percent_of_win) -- Terminal height
-    vim.cmd(":below " .. term_height .. "split | term") -- Launch terminal (horizontal split)
+    local curr_win_height = vim.api.nvim_win_get_height(0) -- current window height
+    local term_height = math.floor(curr_win_height * percent_of_win) -- terminal height
+    vim.cmd(":below " .. term_height .. "split | term") -- launch terminal (horizontal split)
 
-    -- Press keys to run python command on current file
+    -- Enter insert mode in the terminal
+    vim.cmd("startinsert")
+
+    -- press keys to run python command on current file
     vim.api.nvim_feedkeys(py_cmd, "t", false)
 end
 
-vim.keymap.set({ "n" }, "<A-r>", "", {
-    desc = "Run .py file via Neovim built-in terminal",
-    callback = run_curr_python_file,
+-- vim.keymap.set({ "n" }, "<a-r>", "", {
+--     desc = "run .py file via neovim built-in terminal",
+--     callback = run_curr_python_file,
+-- })
+
+vim.keymap.set("n", "<A-r>", run_curr_python_file, {
+    desc = "Run current .py file in a terminal using uv",
 })
 
 -- Using inbuilt floating toggle terminal
